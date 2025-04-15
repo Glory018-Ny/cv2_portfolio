@@ -1,0 +1,200 @@
+ /* Police et variables de couleur */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+:root {
+    --primary: #9e2574; /* Rose doux */
+    --secondary: #f086d0; /* Rose pâle */
+    --accent: #bc037e; /* Violet/Lilas */
+    --dark: #333;
+    --light: #f9f9f9;
+    --text-light: #fff;
+}
+
+/* Structure de base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffdbf2;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: rgb(249, 188, 221);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+/* Colonne gauche */
+.left-column {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 30px;
+    color: var(--text-light);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 30px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+
+/* Éléments de liste */
+.contact ul, 
+.social ul, 
+.skills ul, 
+.languages ul {
+    list-style: none;
+}
+
+.contact li, 
+.social li, 
+.skills li, 
+.languages li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skills li {
+    align-items: flex-start;
+}
+
+.skill-name {
+    font-weight: 600;
+    display: inline-block;
+    width: 120px;
+}
+
+/* Icônes */
+.fas, .fab {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Liens */
+a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Colonne droite */
+.right-column {
+    padding: 40px;
+}
+
+.right-column h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    margin-top: 30px;
+}
+
+.job, .school, .project {
+    margin-bottom: 25px;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin: 5px 0 10px;
+    font-size: 14px;
+}
+
+.right-column ul {
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.right-column li {
+    margin-bottom: 8px;
+}
+
+/* Centres d'intérêt */
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.interest {
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.interest i {
+    margin-right: 5px;
+    color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column {
+        text-align: center;
+    }
+
+    .skills li {
+        justify-content: center;
+    }
+}/*footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #7f8c8d;
+
+}
+
+.fa-heart {
+    color: #e73c6a;
+}
+
